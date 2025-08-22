@@ -1,7 +1,5 @@
 package main;
 
-import java.util.Objects;
-
 public class Node<T> {
   // SECTION: Boilerplate
   private T data;
@@ -24,49 +22,20 @@ public class Node<T> {
   // LAUNCH: Useful methods
 
   public boolean isIdenticalTo(Node<T> other) {
-    if (other == null) { return false; }
-    return
-      Objects.equals(this.data, other.data)
-      && (this.left == null  ? other.left == null  : this.left.isIdenticalTo(other.left))
-      && (this.right == null ? other.right == null : this.right.isIdenticalTo(other.right))
-    ;
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
   /** Should MUTATE `this`. */
   public void reverse() {
-    // Swap `this.left` and `this.right`
-    Node<T> temp = this.left;
-    this.left = this.right;
-    this.right = temp;
-    // Reverse subtrees
-    if (this.left != null) { this.left.reverse(); }
-    if (this.right != null) { this.right.reverse(); }
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
   public int height() {
-    return
-      1 + Math.max(
-        (this.left == null ? 0 : this.left.height()),
-        (this.right == null ? 0 : this.right.height())
-      )
-    ;
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
   public boolean isProper() {
-    return
-      this.left == null
-      ? this.right == null
-      : this.right != null && this.left.isProper() && this.right.isProper()
-    ;
-  }
-
-  public int numberOfNodes() {
-    return
-      1
-      + (this.left == null ? 0 : this.left.numberOfNodes())
-      + (this.right == null ? 0 : this.right.numberOfNodes())
-    ;
-
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
 

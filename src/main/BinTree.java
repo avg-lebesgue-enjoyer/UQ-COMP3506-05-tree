@@ -13,51 +13,24 @@ public class BinTree<T> {
   // LAUNCH:
 
   public boolean isIdenticalTo(BinTree<T> other) {
-    return
-      this.root == null
-      ? other.root == null
-      : this.root.isIdenticalTo(other.root)
-    ;
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
-  /** Should MUTATE `this`. */
+  /** Should MUTATE `this`. Return `this` for chaining. */
   public BinTree<T> reverse() {
-    if (this.root != null) {
-      this.root.reverse();
-    }
-    return this; // for chaining
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
   public int height() {
-    return
-      this.root == null
-      ? 0
-      : this.root.height()
-    ;
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
   
   public boolean isProper() {
-    return
-      this.root == null
-      ? true
-      : this.root.isProper()
-    ;
-  }
-
-  public int numberOfNodes() {
-    return
-      this.root == null
-      ? 0
-      : this.root.numberOfNodes()
-    ;
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
   public boolean isComplete() {
-    return
-      this.root == null
-      ? true
-      : this.numberOfNodes() + 1 == (1 << this.height())
-    ;
+    throw new UnsupportedOperationException("<!> NOT IMPLEMENTED!");
   }
 
 
