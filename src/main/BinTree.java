@@ -1,7 +1,5 @@
 package main;
 
-import java.math.BigInteger;
-
 public class BinTree<T> {
   // SECTION: Boilerplate
   private Node<T> root;
@@ -44,20 +42,8 @@ public class BinTree<T> {
     ;
   }
 
-  public int numberOfNodes() {
-    return
-      this.root == null
-      ? 0
-      : this.root.numberOfNodes()
-    ;
-  }
-
   public boolean isComplete() {
-    return
-      this.root == null
-      ? true
-      : this.numberOfNodes() + 1 == (1 << this.height())
-    ;
+    throw new UnsupportedOperationException("<!> Nope, didn't bother implementing this. Sorry!");
   }
 
 

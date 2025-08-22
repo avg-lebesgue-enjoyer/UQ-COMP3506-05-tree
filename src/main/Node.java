@@ -60,16 +60,7 @@ public class Node<T> {
     ;
   }
 
-  public int numberOfNodes() {
-    return
-      1
-      + (this.left == null ? 0 : this.left.numberOfNodes())
-      + (this.right == null ? 0 : this.right.numberOfNodes())
-    ;
-
-  }
-
-
+  
 
   // SECTION: Visualise tree
   public String toStringWith(int indentationLevel) {
